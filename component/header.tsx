@@ -5,7 +5,7 @@ type LinkUnit = {
     label:string;
 }
 
-const LINKS:Array<LinkUnit> = [
+const LINKS:LinkUnit[] = [
     {
         url:"/",
         label:"Accueil"
