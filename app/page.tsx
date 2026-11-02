@@ -11,8 +11,8 @@ const CARDS = [
 ]
 
 const QUESTIONS = [
-  {id:1, label:"Comment on peut t'épouser", resume:"Je fais pas ça déso"},
-  {id:2, label:"T'es sûr ?", resume:"T'es Ame ? sinon non"},
+  {id:1, label:"Comment on peut t'épouser ?", resume:"Je fais pas ça déso"},
+  {id:2, label:"T'es sûr ?", resume:"T'es pas Ame"},
 ]
 
 export default function Home() {

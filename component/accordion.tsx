@@ -11,7 +11,7 @@ export default function Accordion({ label, resume }:Props) {
     const [open, setOpen] = useState(false);
 
     return (
-        <div>
+        <div className="border-t border-white" >
             <button onClick={()=>setOpen(!open)} >{label}</button>
             {open && <p>{resume}</p>}
         </div>
