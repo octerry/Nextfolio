@@ -4,10 +4,12 @@ import Section from "@/component/section";
 import Card from "@/component/card";
 import Accordion from "@/component/accordion";
 
-const CARDS = [
-  {id:1, title:"Shrimp Quartet", category:"crevettes", resume:"Un orchestre de crevettes"},
-  {id:2, title:"Calendrier Crealab", category:"web", resume:"Systeme de reservation en ligne"},
-  {id:3, title:"Crevette en 3D", category:"crevette", resume:"Une crevette imprimee en 3D"},
+const CARDS:[{
+  id:number, title:string, category:string, resume:string, url:string, state?:"classique"|"vedette"
+}] = [
+  {id:1, title:"Shrimp Quartet", category:"crevettes", resume:"Un orchestre de crevettes", url:"./projets/shrimp-quartet", state:"vedette"},
+  {id:2, title:"Calendrier Crealab", category:"web", resume:"Systeme de reservation en ligne", url:"./projets/calendrier-crealab"},
+  {id:3, title:"Crevette en 3D", category:"crevette", resume:"Une crevette imprimee en 3D", url:"./projets/3d-shrimp"},
 ]
 
 const QUESTIONS = [
@@ -26,7 +28,7 @@ export default function Home() {
         <div className="grid gap-4 sm:grid-cols-3 my-3">
           {
             CARDS.map((unit)=>(
-              <Card key={unit.id} title={unit.title} category={unit.category} resume={unit.resume} />
+              <Card key={unit.id} title={unit.title} category={unit.category} resume={unit.resume} url={unit.url} state={unit.state} />
             ))
           }
         </div>
