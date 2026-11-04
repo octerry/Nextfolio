@@ -1,19 +1,15 @@
-import Section from "@/component/section";
-import Card from "@/component/card";
-import { CARDS } from "../DATA/cards";
+"use client"
+
+import SearchBar from "@/component/searchbar";
+import ProjectCards from "@/component/project-cards";
+import AdBanner from "@/component/ad-banner";
 
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl px-6 py-16">
-            <Section title="Nos projets">
-              <div className="grid gap-4 sm:grid-cols-3 my-3">
-                {
-                  CARDS.map((unit)=>(
-                    <Card key={unit.id} title={unit.title} category={unit.category} resume={unit.resume} url={unit.url} state={unit.state} />
-                  ))
-                }
-              </div>
-            </Section>
+      <SearchBar/>
+      <ProjectCards/> {/*> J'ai fait un composant pour le use client */}
+      <AdBanner linkTo="https://www.youtube.com/watch?v=YAgJ9XugGBo" imgSrc="/fish.gif" label="Fish." />
     </main>
   );
 }

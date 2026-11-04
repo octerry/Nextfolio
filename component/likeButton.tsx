@@ -11,7 +11,7 @@ export default function LikeButton({ onClick }:Props) {
 
     const STYLE = like ? "border-red-500 bg-red-500 text-black" : "border-neutral-300 text-white"
 
-    function handleClick(e:React.MouseEvent<HTMLButtonElement>) {
+    function handleClick(e:React.MouseEvent) {
         e.preventDefault();   // askip c'est pour éviter la redirection des trucs HTML
         e.stopPropagation();  // et celui là c'est pour NextJS et le Link
         setLike(!like);

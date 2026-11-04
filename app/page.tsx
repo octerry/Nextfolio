@@ -1,9 +1,11 @@
+import SearchBar from "@/component/searchbar";
 import Hero from "@/component/hero";
 import Button from "@/component/button";
 import Section from "@/component/section";
 import Card from "@/component/card";
 import { CARDS } from "./DATA/cards";
 import Accordion from "@/component/accordion";
+import AdBanner from "@/component/ad-banner";
 
 const QUESTIONS = [
   {id:1, label:"Comment on peut t'épouser ?", resume:"Je fais pas ça déso"},
@@ -13,6 +15,7 @@ const QUESTIONS = [
 export default function Home() {
   return (
     <main className="mx-auto max-w-3xl px-6">
+      <SearchBar/>
       <Hero 
         title="Le goat du dev web" 
         text="Y'a pas de carabistouilles quand il t'embrouille" 
@@ -36,6 +39,7 @@ export default function Home() {
           }
         </div>
       </Section>
+      <AdBanner linkTo="https://playriftbound.com/fr-fr/" imgSrc="/riftbounds.jpg" label="Achètes." />
     </main>
   );
 }
