@@ -3,13 +3,13 @@ import Hero from "@/component/hero";
 import Button from "@/component/button";
 import Section from "@/component/section";
 import Card from "@/component/card";
-import { CARDS } from "./DATA/cards";
+import { CARDS } from "../data/cards";
 import Accordion from "@/component/accordion";
 import AdBanner from "@/component/ad-banner";
 
 const QUESTIONS = [
   {id:1, label:"Comment on peut t'épouser ?", resume:"Je fais pas ça déso"},
-  {id:2, label:"T'es sûr ?", resume:"T'es pas Ame"},
+  {id:2, label:"T'es sûr ?", resume:"T'es pas Ame"},  
 ]
 
 export default function Home() {

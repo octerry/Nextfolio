@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { API } from "@/app/DATA/projets";
+import { API } from "@/data/projets";
 
 type Props = {
   params: Promise<{ slug: string }>;

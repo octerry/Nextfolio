@@ -4,7 +4,7 @@ import { useState } from "react"
 
 import Section from "./section"
 import Card from "./card"
-import { CARDS } from "@/app/DATA/cards"
+import { CARDS } from "@/data/cards"
 
 export default function ProjectCards() {
     const [newCards, setNewCards] = useState(CARDS);
