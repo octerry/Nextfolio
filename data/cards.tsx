@@ -1,6 +1,13 @@
-export const CARDS:[
-  {id:number, title:string, category:string, resume:string, url:string, state?:"classique"|"vedette"}
-] = [
+interface ref {
+  id:number, 
+  title:string, 
+  category:string, 
+  resume:string, 
+  url:string, 
+  state?:"classique"|"vedette"
+}
+
+export const CARDS:[ref] = [
   {id:1, title:"Shrimp Quartet", category:"crevettes", resume:"Un orchestre de crevettes", url:"./projets/shrimp-quartet", state:"vedette"},
   {id:2, title:"Calendrier Crealab", category:"web", url:"./projets/calendrier-crealab", resume:"Systeme de reservation en ligne"},
   {id:3, title:"Crevette en 3D", category:"crevette", url:"./projets/3d-shrimp", resume:"Une crevette imprimee en 3D"},
